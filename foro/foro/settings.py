@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'boards.apps.BoardsConfig',
     'posts.apps.PostsConfig',
     'media.apps.MediaConfig',
-    'theards.apps.TheardsConfig',
+    'threads.apps.ThreadsConfig',
     'django_cleanup.apps.CleanupConfig',
 ]
 
