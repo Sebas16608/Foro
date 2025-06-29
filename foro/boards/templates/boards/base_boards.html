@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Tablones - MaxChan{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'boards/css/boards.css' %}">
+<div class="boards-wrapper">
+    {% block boards_content %}{% endblock %}
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Foro - MaxChan{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'posts/css/estilos.css' %}">
+    <link rel="icon" href="{% static 'boards/img/favicon.png' %}">
+</head>
+<body>
+
+    <header>
+        <h1><a href="/">MaxChan</a></h1>
+        <nav>
+            <a href="/boards/">Tablones</a> |
+            <a href="/posts/">Posts</a> |
+            <a href="/threads/">Hilos</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Aquí va el contenido de cada página -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>MaxChan © 2025</p>
+    </footer>
+
+    <script src="{% static 'threads/js/scripts.js' %}"></script>
+</body>
+</html>

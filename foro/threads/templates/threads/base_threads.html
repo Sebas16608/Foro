@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Hilos - MaxChan{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'threads/css/threads.css' %}">
+<div class="threads-wrapper">
+    {% block threads_content %}{% endblock %}
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Posts - MaxChan{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'posts/css/posts.css' %}">
+<div class="posts-wrapper">
+    {% block posts_content %}{% endblock %}
+</div>
+{% endblock %}
