@@ -1,0 +1,1 @@
+Voy a crear un foro para el colegio donde estudio. No es directamente para el colegio, es para los alumos, quiero que tengan una pagina donde subir de todo, tareas, hablen de la gente de forma anonima
