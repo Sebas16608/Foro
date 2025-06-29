@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'boards.apps.BoardsConfig',
     'posts.apps.PostsConfig',
-    'media.apps.MediaConfig',
     'threads.apps.ThreadsConfig',
     'django_cleanup.apps.CleanupConfig',
 ]
