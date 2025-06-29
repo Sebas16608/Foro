@@ -19,3 +19,11 @@ class Post(models.Model):
         if not self.anon_id:
             self.anon_id = generar_anon_id()
         super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f"Post #{self.id} en hilo {self.thread.id} - {self.anon_id}"
+
+    class Meta:
+        verbose_name = "Post"
+        verbose_name_plural = "Posts"
+        ordering = ['creado']

@@ -19,3 +19,11 @@ class Thread(models.Model):
         if not self.anon_id:
             self.anon_id = generar_anon_id()
         super().save(*args, **kwargs)
+    
+    def __str__(self):
+        return f"{self.titulo or '[Sin título]'} ({self.board.short_name})"
+    
+    class Meta:
+        verbose_name = "Thread"
+        verbose_name_plural = "Threads"
+        ordering = ['-bump']  # los hilos más activos primero
