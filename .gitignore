@@ -18,6 +18,10 @@ __pycache__/
 **/migrations/*.py
 !**/migrations/__init__.py
 
+# Ignorar archivos subidos
+/media/
+
+
 # Archivos generados por logs o tests
 *.log
 *.pot
