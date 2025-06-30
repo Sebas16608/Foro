@@ -123,6 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 # ubicacion de los archivos estaticos
+STATIC_ROOT = BASE_DIR / 'static'
+
 STATIC_URL = 'static/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
@@ -130,21 +132,7 @@ STATICFILES_DIR = [
     'manage_post/static',
     'user/static',
 ]
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'], 
-        'APP_DIRS': True,                 
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
+
 
 
 
